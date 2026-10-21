@@ -1,0 +1,13 @@
+out/
+.build/
+.signing/
+*.jks
+*.keystore
+*.apk
+*.apks
+*.log
+local.properties
+.env*
+__pycache__/
+*.pyc
+.DS_Store
