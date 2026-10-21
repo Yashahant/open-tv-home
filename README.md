@@ -4,10 +4,10 @@ A lightweight, remote-friendly Android TV launcher, derived from [Ansub Khan's T
 
 ## Features
 
-- Clock, date, and built-in gradient wallpapers. No personal photographs are bundled.
+- Clock, date, and built-in gradient wallpapers.
 - All apps, Inputs, Settings, and network shortcuts.
 - Add apps to Home from Settings; hold OK on a home app to manage it.
-- Detects the passthrough inputs exposed by the TV, rather than assuming three HDMI ports or an AV port.
+- Automatically detects the TV inputs exposed by your device.
 - USB shortcut opens a file/media browser that **you choose**. The launcher itself does not read USB files.
 - Optional startup input, selected in Settings. Default: **stay on Home**.
 - Startup selection waits for Android boot completion and input registration. No periodic launch retry loop.
@@ -15,7 +15,7 @@ A lightweight, remote-friendly Android TV launcher, derived from [Ansub Khan's T
 
 ## Compatibility
 
-Designed for Android TV / Google TV with API 21+ (Android 5.0+). This is not a claim of certification or universal hardware testing. The development device runs Android TV 10; other manufacturers and OS versions need testing.
+Designed for Android TV and Google TV running Android 5.0 or later (API 21+). Tested on Android TV 10; compatibility with other devices and versions may vary.
 
 TV sticks and boxes usually have HDMI **output**, not selectable HDMI inputs. An empty input list is normal there. Vendor firmware may restrict replacement Home apps, boot launches, Wi-Fi information, or access to TV input players. Samsung Tizen, LG webOS, and Roku are not Android TV and cannot run this APK.
 
@@ -31,9 +31,9 @@ For help from an AI with local terminal access, copy the [Claude / ChatGPT Codex
 
 ## Privacy and permissions
 
-No analytics, accounts, ads, bundled personal media, or INTERNET permission. Settings remain in Android's private app preferences. Network-state permissions support the Wi-Fi indicator; boot permission supports optional startup input; uninstall permission allows the system confirmation dialog for app removal. A selected media browser is a separate app with its own permissions and privacy behavior.
+No analytics, accounts, or ads. The launcher does not request internet access. Settings remain in Android's private app preferences. Network-state permissions support the Wi-Fi indicator; boot permission supports optional startup input; uninstall permission allows the system confirmation dialog for app removal. A selected media browser is a separate app with its own permissions and privacy behavior.
 
-This source distribution excludes development screenshots, device logs, network addresses, local paths, APK backups, and signing keys. Do not upload your keys or private photos when contributing.
+
 
 ## Known limits
 
@@ -46,7 +46,8 @@ This source distribution excludes development screenshots, device logs, network 
 
 ## Contribute
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Report your TV model, Android version, expected behavior, and reproducible steps. Remove addresses, account names, media filenames, and other personal details from logs or screenshots first.
+See [CONTRIBUTING.md](CONTRIBUTING.md). Report your TV model, Android version, expected behavior, and reproducible steps.
 
 This is an independent derivative, not an official release or endorsement by the upstream author or any TV manufacturer.
+
 

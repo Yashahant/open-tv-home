@@ -22,16 +22,17 @@ The application ID stays `com.ansub.tvhome` for source continuity with the upstr
 
 ## Tool failures
 
-If native `aapt2` crashes on a Windows machine, preserve the source, inspect the SDK installation, and try a clean official SDK or a Linux/macOS build environment. Do not install a partial APK or claim a failed build passed. The development environment used for this fork needed a local manifest-packaging workaround; that machine-specific workaround is not part of the public build process.
+If `aapt2` crashes, check your JDK and Android SDK versions, then try reinstalling the official SDK build tools. Build failures must be resolved before installing the APK.
 
 ## Tests before publishing
 
 1. Build from a clean checkout and verify the signature.
-2. Inspect APK contents: no photos, keys, logs, device addresses, or local paths.
+2. Inspect APK contents and confirm only required application files are included.
 3. Install on a supported test TV and verify Home, Back, D-pad navigation, Settings, wallpapers, apps, and Inputs.
 4. Verify default startup stays on Home; separately test optional startup input after a real reboot.
 5. Check devices without inputs or without a media app; check graceful failure if a saved app is removed.
 6. Verify recovery to stock Home before experimenting with firmware-specific defaults.
 
 Physical testing on one model cannot establish universal compatibility. Record the model/API level and untested behavior in release notes.
+
 
