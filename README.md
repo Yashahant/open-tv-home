@@ -2,6 +2,41 @@
 
 A lightweight, remote-friendly Android TV launcher, derived from [Ansub Khan's TV Detox](https://github.com/Ansub/tv-detox). MIT licensed; original attribution is preserved in [LICENSE](LICENSE).
 
+## Open TV Home vs the default launcher
+
+Default launchers vary by TV brand, model, and software version. This compares common Android TV / Google TV behavior; individual devices may differ.
+
+| Area | Open TV Home | Default TV launcher |
+|---|---|---|
+| Home screen | Simple clock, app shortcuts, input shortcuts, and gradient wallpapers | Usually includes recommendations, content rows, and manufacturer features |
+| Advertising and recommendations | No ads or recommendation feed in the launcher | May show sponsored content and recommendations, depending on device and region |
+| Everyday navigation | Direct access to All apps, Inputs, Settings, and network settings | Often provides richer content discovery and service integrations |
+| Performance | Avoids animated backgrounds and recommendation feeds; caches app lists and icons | Workload varies with its features and services; may benefit from vendor optimizations |
+| Input selection | Lists inputs exposed through Android's TV input APIs | Often has deeper integration with the TV's input labels, CEC devices, and vendor menus |
+| USB media | Opens a file/media browser selected by the user | May include a built-in media browser and automatic USB prompts |
+| Startup behavior | Optional input launch after boot completion; Home is the default | May offer last-input restoration or manufacturer-specific startup settings |
+| Customization | Source code is available under MIT; apps, gradients, and startup input are configurable | Usually configurable through built-in settings; source is generally not available |
+| Voice, search, and recommendations | No built-in voice search or personalized recommendations; system assistant behavior depends on the TV | Usually integrates these features more closely |
+| Installation and updates | Requires sideloading/building and manual updates; default-Home support varies | Preinstalled and usually updated through the manufacturer or platform |
+| Compatibility and support | Limited device testing; community-maintained | Designed for the device and supported through its vendor/platform |
+
+### Strong points
+
+- A straightforward Home screen for people who prefer apps and inputs over content feeds.
+- No launcher accounts, analytics, or internet permission.
+- Open source: users can inspect, modify, and redistribute it under the MIT licence.
+- User-selectable media browser and optional startup input instead of a fixed vendor setup.
+
+### Weak points and trade-offs
+
+- Less content discovery, voice/search integration, and vendor-specific functionality.
+- Input switching and startup behavior depend on what the TV firmware allows. Some TVs force their stock Home screen.
+- USB browsing needs a separate app; this launcher does not play media itself.
+- Manual installation and updates, limited hardware testing, and incomplete translation coverage for newer features.
+- No measured evidence yet that it boots faster, uses less memory, or makes every TV more responsive than its default launcher. A simpler interface does not guarantee a faster device.
+
+**Choose Open TV Home** if you want a simple, customizable app-and-input screen. **Keep the default launcher** if you prefer integrated recommendations, voice features, vendor support, and automatic updates.
+
 ## Features
 
 - Clock, date, and built-in gradient wallpapers.
@@ -49,5 +84,6 @@ No analytics, accounts, or ads. The launcher does not request internet access. S
 See [CONTRIBUTING.md](CONTRIBUTING.md). Report your TV model, Android version, expected behavior, and reproducible steps.
 
 This is an independent derivative, not an official release or endorsement by the upstream author or any TV manufacturer.
+
 
 
